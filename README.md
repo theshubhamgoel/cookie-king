@@ -80,10 +80,7 @@ We may update our Privacy Policy from time to time to align with new gameplay fe
 
 ## 7. Contact Information
 
-If you have any questions, bug reports, or feedback regarding this Privacy Policy or the data practices of **Cookie King: Idle Empire**, please open an issue on our GitHub repository or contact our developer support:
-
-* **Support Link:** [https://github.com/theshubhamgoel/Cookie-Clicker/issues](https://github.com/theshubhamgoel/Cookie-Clicker/issues)
-* **Project Repository:** [https://github.com/theshubhamgoel/Cookie-Clicker](https://github.com/theshubhamgoel/Cookie-Clicker)
+If you have any questions, bug reports, or feedback regarding this Privacy Policy or the data practices of **Cookie King: Idle Empire**, email us at themansigoel@gmail.com.
 
 ---
 
