@@ -11,7 +11,8 @@ By downloading and playing the Game, you agree to the terms outlined in this Pri
 ## 1. Introduction & Our Privacy Commitment
 
 We believe in complete data transparency and security. Unlike many modern mobile games, **Cookie King: Idle Empire is designed with a "Privacy-First" architecture**:
-* We **do not** run any third-party ad networks or tracking SDKs.
+* We **do not** run any third-party ad networks or cross-app tracking SDKs for target marketing.
+* We integrate secure, industry-standard telemetry services (Google Firebase) strictly for anonymous analytics and performance diagnostics.
 * We **do not** collect, store, or sell any of your personally identifiable information (PII) on private servers.
 * We **do not** track your location, access your device's contacts, or monitor your activity across other apps.
 
@@ -44,6 +45,23 @@ While playing the Game, certain services managed by Apple Inc. are integrated to
 * **How it is stored:** Provided automatically by Apple's App Store Connect analytics platform if you have opted-in to sharing diagnostics with developers.
 * **Purpose:** To help us find and resolve code issues, optimize performance, and improve the user experience. This data contains no personal details.
 
+### E. Firebase Telemetry & Performance Diagnostics
+* **What is collected:** Anonymous device installation IDs, product interactions (e.g., click combo telemetry summaries, buildings purchased, upgrades unlocked, and tutorial events), and crash diagnostic reports.
+* **How it is stored:** Processed securely in Google's Firebase backend. No personal identifier data (like your name, email, or contacts) is linked to these metrics.
+* **Purpose:** Analytics & App Functionality (understanding progression balance and fixing technical crashes).
+
+---
+
+## App Store Privacy Configuration Reference
+
+When submitting **Cookie King: Idle Empire** to the App Store, you can configure the required **App Privacy** questionnaire in App Store Connect with the following details:
+
+| Data Type | Is it used for tracking? | Linked to user's identity? | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Device ID** | **No** (Unless you explicitly use IDFA for advertising) | **No** (We do not tie it to any logged-in accounts) | **Analytics** |
+| **Product Interaction** | **No** | **No** (We operate anonymously without accounts) | **Analytics** |
+| **Crash / Performance Data** | **No** | **No** | **App Functionality** |
+
 ---
 
 ## 3. Children's Privacy (COPPA & GDPR Compliance)
@@ -56,9 +74,9 @@ If you are a parent or guardian and believe that your child has provided persona
 
 ---
 
-## 4. In-App Purchases (Simulated & Real)
-* The premium skin and multiplier items listed inside the Game's Premium Shop are fully simulated and cost **zero real-world money**. 
-* No financial details, credit card numbers, or transaction histories are collected or processed.
+## 4. In-App Purchases (Real & Secure)
+* The premium multiplier items and cosmetic skins inside the Game's Premium Shop are purchased securely using Apple's official **StoreKit 2** payment system.
+* All financial transactions, billing, and credit card processing are handled entirely and securely by Apple Inc. The developer has **no access** to your credit card details, bank information, or personal financial records.
 
 ---
 
