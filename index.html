@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie King: Idle Empire — Privacy Policy</title>
+  <meta name="description" content="Official Privacy Policy for Cookie King: Idle Empire. Learn about our privacy-first design, local storage practices, and data choices.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <div class="container">
+    
+    <!-- Hero / Header Section -->
+    <header class="hero">
+      <div class="logo-container" id="logo-spinner">
+        <!-- Royal Cookie SVG Logo -->
+        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="53" r="38" fill="#c38848" stroke="#875323" stroke-width="4" />
+          <!-- Chocolate chips -->
+          <circle cx="34" cy="36" r="5" fill="#4d2f14" />
+          <circle cx="66" cy="38" r="6" fill="#4d2f14" />
+          <circle cx="48" cy="48" r="4.5" fill="#4d2f14" />
+          <circle cx="32" cy="62" r="5" fill="#4d2f14" />
+          <circle cx="62" cy="64" r="5.5" fill="#4d2f14" />
+          <circle cx="46" cy="72" r="4" fill="#4d2f14" />
+          <!-- Royal Crown resting on top of the cookie -->
+          <path d="M25 28 L32 12 L50 22 L68 12 L75 28 Z" fill="#ffd700" stroke="#b8860b" stroke-width="3" stroke-linejoin="round" />
+          <!-- Crown gems -->
+          <circle cx="32" cy="12" r="2.5" fill="#ff4757" />
+          <circle cx="50" cy="22" r="2.5" fill="#2ed573" />
+          <circle cx="68" cy="12" r="2.5" fill="#1e90ff" />
+          <circle cx="50" cy="14" r="2.5" fill="#ff4757" />
+        </svg>
+      </div>
+      <h1>Cookie King</h1>
+      <p class="tagline">Idle Empire</p>
+      
+      <div class="hero-meta">
+        <span class="badge badge-privacy">Privacy-First</span>
+        <span class="badge badge-gold">Last Updated: May 2026</span>
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">☀</span> <span class="theme-label">Warm Theme</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h3>Sections</h3>
+      <nav class="toc" aria-label="Table of Contents">
+        <ul class="toc-list">
+          <li><a href="#commitment" class="toc-link">Commitment</a></li>
+          <li><a href="#collection" class="toc-link">Data Collection</a></li>
+          <li><a href="#appstore" class="toc-link">App Store Reference</a></li>
+          <li><a href="#children" class="toc-link">Children's Privacy</a></li>
+          <li><a href="#purchases" class="toc-link">In-App Purchases</a></li>
+          <li><a href="#control" class="toc-link">Data Control & Demo</a></li>
+          <li><a href="#changes" class="toc-link">Policy Changes</a></li>
+          <li><a href="#contact" class="toc-link">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+      
+      <!-- Section 1: Commitment -->
+      <section id="commitment" class="content-card">
+        <h2><span class="section-num">1.</span> Introduction & Commitment</h2>
+        <p>Welcome to <strong>Cookie King: Idle Empire</strong> (the "Game"), developed as a premium idle-clicker mobile application. Your privacy is of paramount importance to us. This Privacy Policy governs your use of the Game and explains what information we collect, how we use it, and your choices regarding your data.</p>
+        <p>By downloading and playing the Game, you agree to the terms outlined in this Privacy Policy.</p>
+        
+        <div class="alert-note">
+          <p>Unlike many modern mobile games, Cookie King: Idle Empire is designed with a "Privacy-First" architecture: we do not collect PII on private servers, and your progress is stored locally or in your sovereign Apple iCloud account. We run secure, industry-standard advertising (Google AdMob) and analytics (Google Firebase) strictly with your consent.</p>
+        </div>
+        
+        <ul>
+          <li>We integrate <strong>Google AdMob</strong> to display clean, non-obtrusive in-game advertisements. Ad identifiers are only used for ad-serving purposes under Apple's App Tracking Transparency framework.</li>
+          <li>We integrate secure, industry-standard telemetry services (Google Firebase) strictly for anonymous analytics and performance diagnostics.</li>
+          <li>We <strong>do not</strong> collect, store, or sell any of your personally identifiable information (PII) on private servers.</li>
+          <li>We <strong>do not</strong> track your location or access your device's contacts.</li>
+        </ul>
+        <p>All game mechanics, including local progress, coin counts, prestige rankings, and sound settings, are processed entirely on your local device or backed up securely on Apple's cloud infrastructure.</p>
+      </section>
+
+      <!-- Section 2: Data Collection -->
+      <section id="collection" class="content-card">
+        <h2><span class="section-num">2.</span> Information We Collect and How We Use It</h2>
+        <p>While playing the Game, certain services managed by Apple Inc. are integrated to enable premium features. Here is how they handle your data:</p>
+        
+        <h3>A. Local Game State</h3>
+        <p>Saved locally in your device's secure sandbox using <code>UserDefaults</code> and local storage structures.</p>
+        <ul>
+          <li><strong>What is collected:</strong> Current cookie balances, career stats, unlocked tech boosts, owned producers (cursors, grandmas, factories), selected avatar indexes, custom bakery names, volume levels, and haptic vibration preferences.</li>
+          <li><strong>Purpose:</strong> To persist your active session so you can resume playing exactly where you left off.</li>
+        </ul>
+
+        <h3>B. Apple iCloud Synchronization</h3>
+        <p>Automatically synchronized with your personal Apple iCloud account using Apple's secure <code>NSUbiquitousKeyValueStore</code> API.</p>
+        <ul>
+          <li><strong>What is collected:</strong> A copy of your encrypted Game State data.</li>
+          <li><strong>Purpose:</strong> To enable cross-device progress synchronization (e.g., playing on both your iPhone and iPad) and secure progress recovery if you lose, damage, or upgrade your device.</li>
+          <li><em>Note: The developer has zero access to your iCloud credentials or data. Your data is encrypted and managed entirely by Apple.</em></li>
+        </ul>
+
+        <h3>C. Apple Game Center</h3>
+        <p>Submitted to Apple's Game Center databases if you choose to sign in to Game Center.</p>
+        <ul>
+          <li><strong>What is collected:</strong> Your public Game Center profile nickname, avatar, achievements unlocked, and lifetime cookies baked.</li>
+          <li><strong>Purpose:</strong> To display your scores on the Global Leaderboards and track game achievements. Your profile and standings are visible to other players in accordance with your Apple Game Center privacy settings.</li>
+        </ul>
+
+        <h3>D. App Store Diagnostics & Analytics</h3>
+        <p>Provided automatically by Apple's App Store Connect analytics platform if you have opted-in to sharing diagnostics with developers.</p>
+        <ul>
+          <li><strong>What is collected:</strong> Anonymous performance telemetry, launch times, and crash logs.</li>
+          <li><strong>Purpose:</strong> To help us find and resolve code issues, optimize performance, and improve the user experience. This data contains no personal details.</li>
+        </ul>
+
+        <h3>E. Firebase Telemetry & Performance Diagnostics</h3>
+        <p>Processed securely in Google's Firebase backend.</p>
+        <ul>
+          <li><strong>What is collected:</strong> Anonymous device installation IDs, product interactions (e.g., click combo telemetry summaries, buildings purchased, upgrades unlocked, and tutorial events), and crash diagnostic reports.</li>
+          <li><strong>Purpose:</strong> Analytics & App Functionality (understanding progression balance and fixing technical crashes). No personal identifier data is linked to these metrics.</li>
+        </ul>
+
+        <h3>F. Google AdMob Advertising</h3>
+        <p>Processed securely by Google AdMob services to support our free-to-play model.</p>
+        <ul>
+          <li><strong>What is collected:</strong> Mobile advertising identifiers (like Apple's IDFA or IDFV), device hardware specifications, and interaction data with in-game advertisements.</li>
+          <li><strong>Purpose:</strong> To serve, optimize, and measure the performance of in-game advertisements. If you consent via Apple's App Tracking Transparency prompt, these identifiers are used to personalize the ads. If you opt-out, only non-personalized, contextual ads are displayed.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3: App Store Reference -->
+      <section id="appstore" class="content-card">
+        <h2><span class="section-num">3.</span> App Store Privacy Configuration</h2>
+        <p>When submitting <strong>Cookie King: Idle Empire</strong> to the App Store, the required App Privacy questionnaire in App Store Connect is configured with the following parameters:</p>
+        
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Data Type</th>
+                <th>Is it used for tracking?</th>
+                <th>Linked to user's identity?</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Device ID</strong></td>
+                <td><strong>Yes</strong> (AdMob IDFA for personalized advertising, if consented)</td>
+                <td><strong>No</strong> (We do not tie it to any logged-in accounts)</td>
+                <td><strong>Third-Party Advertising, Analytics</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Product Interaction</strong></td>
+                <td><strong>Yes</strong> (To track impressions, clicks, and ad performance)</td>
+                <td><strong>No</strong> (We operate anonymously without accounts)</td>
+                <td><strong>Third-Party Advertising, Analytics</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Crash / Performance Data</strong></td>
+                <td><strong>No</strong></td>
+                <td><strong>No</strong></td>
+                <td><strong>App Functionality</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4: Children's Privacy -->
+      <section id="children" class="content-card">
+        <h2><span class="section-num">4.</span> Children's Privacy (COPPA & GDPR)</h2>
+        <p><strong>Cookie King: Idle Empire</strong> is rated <strong>4+ (Everyone)</strong> on the App Store.</p>
+        <ul>
+          <li>We <strong>do not</strong> knowingly solicit or collect any personal information from children under the age of 13 (or under the age of 16 in the European Union).</li>
+          <li>Because our Game operates entirely local to the device and utilizes Apple's standardized, secure services (iCloud/Game Center) which carry their own parental protection suites, the Game is fully compliant with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and the <strong>General Data Protection Regulation (GDPR)</strong>.</li>
+        </ul>
+        <p>If you are a parent or guardian and believe that your child has provided personal information to us, please contact us immediately, and we will take prompt steps to delete any such data.</p>
+      </section>
+
+      <!-- Section 5: In-App Purchases -->
+      <section id="purchases" class="content-card">
+        <h2><span class="section-num">5.</span> In-App Purchases</h2>
+        <p>The premium multiplier items and cosmetic skins inside the Game's Premium Shop are purchased securely using Apple's official <strong>StoreKit 2</strong> payment system.</p>
+        <p>All financial transactions, billing, and credit card processing are handled entirely and securely by Apple Inc. The developer has <strong>no access</strong> to your credit card details, bank information, or personal financial records.</p>
+      </section>
+
+      <!-- Section 6: Data Control & Simulator -->
+      <section id="control" class="content-card" style="position: relative;">
+        <!-- Wipe Overlay Screen -->
+        <div class="wipe-anim-overlay" id="wipe-overlay">
+          <div class="wipe-text">Wiping Local Sandbox...</div>
+          <div class="wipe-subtext">UserDefaults & local database cleared.</div>
+        </div>
+
+        <h2><span class="section-num">6.</span> Data Deletion and Control Choices</h2>
+        <p>You have absolute, granular control over your game data at all times:</p>
+        <ol style="margin-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-secondary); font-size: 1.05rem;">
+          <li><strong>Wipe All Local Data:</strong> You can permanently erase all local progress, coin counts, prestige multipliers, and settings at any time by navigating to <strong>Settings</strong> and tapping <strong>REINICIAR FACTORÍA / FACTORY RESET</strong>. This action wipes the local database instantly.</li>
+          <li><strong>Disable iCloud Syncing:</strong> You can toggle off automatic cloud backups by navigating to your <strong>Profile</strong> page and turning off the <strong>Auto-Sync</strong> switch. Alternatively, you can disable iCloud access for the Game in your iOS system settings.</li>
+          <li><strong>Sign Out of Game Center:</strong> You can opt-out of leaderboards by signing out of Game Center in your iOS system settings.</li>
+        </ol>
+
+        <!-- Interactive Game & Reset Simulator -->
+        <div class="interactive-widget">
+          <div class="widget-title">
+            <span>🍪</span> Bakery Data & Sandbox Simulator
+          </div>
+          <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 0.5rem;">
+            Click the cookie to generate mock game state. Tap <strong>Factory Reset</strong> to simulate erasing your local game sandbox as outlined in choice 1.
+          </p>
+          <div class="clicker-box">
+            <svg class="interactive-cookie" id="cookie-btn" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#d49a5b" stroke="#aa7237" stroke-width="4" />
+              <!-- Chocolate chips -->
+              <circle cx="30" cy="30" r="6" fill="#5c3619" />
+              <circle cx="70" cy="32" r="7" fill="#5c3619" />
+              <circle cx="48" cy="48" r="5" fill="#5c3619" />
+              <circle cx="28" cy="65" r="6" fill="#5c3619" />
+              <circle cx="68" cy="68" r="6.5" fill="#5c3619" />
+              <circle cx="48" cy="74" r="5" fill="#5c3619" />
+            </svg>
+            <div class="clicker-stats">
+              <div class="stat-item">Cookies Baked: <span class="stat-val" id="cookie-count">0</span></div>
+              <div class="stat-item">iCloud Sync: <span class="stat-val" id="icloud-status" style="color: #2ed573;">Enabled</span></div>
+              <div class="stat-item">Local Storage Size: <span class="stat-val" id="storage-size">0 bytes</span></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <button class="btn-widget" id="sync-toggle">Toggle iCloud Sync</button>
+              <button class="btn-widget btn-danger" id="reset-btn">Factory Reset Data</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Policy Changes -->
+      <section id="changes" class="content-card">
+        <h2><span class="section-num">7.</span> Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time to align with new gameplay features or App Store guidelines. Any modifications will be posted directly on this page with an updated "Last Updated" timestamp. We encourage you to review this policy periodically to stay informed about our commitment to user privacy.</p>
+      </section>
+
+      <!-- Section 8: Contact -->
+      <section id="contact" class="content-card">
+        <h2><span class="section-num">8.</span> Contact Information</h2>
+        <p>If you have any questions, bug reports, or feedback regarding this Privacy Policy or the data practices of <strong>Cookie King: Idle Empire</strong>, email us at:</p>
+        <p style="text-align: center; margin: 1.5rem 0;">
+          <a href="mailto:themansigoel@gmail.com" class="btn-widget" style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem;">themansigoel@gmail.com</a>
+        </p>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Cookie King: Idle Empire. All rights reserved.</p>
+      <p>Drafted under App Store Review Guidelines. Hosted via <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.</p>
+    </footer>
+
+  </div>
+
+  <!-- Theme Toggle & Active Header Observer & Cookie Game Javascript -->
+  <script>
+    // --- Theme Switcher ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeLabel = themeToggle.querySelector('.theme-label');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+    
+    // Check saved theme or system preference
+    let currentTheme = localStorage.getItem('cookie-king-theme') || 'dark';
+    document.body.setAttribute('data-theme', currentTheme === 'warm' ? 'warm' : 'dark');
+    updateThemeUI();
+
+    themeToggle.addEventListener('click', () => {
+      currentTheme = currentTheme === 'dark' ? 'warm' : 'dark';
+      document.body.setAttribute('data-theme', currentTheme);
+      localStorage.setItem('cookie-king-theme', currentTheme);
+      updateThemeUI();
+    });
+
+    function updateThemeUI() {
+      if (currentTheme === 'warm') {
+        themeLabel.textContent = 'Cocoa Theme';
+        themeIcon.textContent = '🌙';
+      } else {
+        themeLabel.textContent = 'Warm Theme';
+        themeIcon.textContent = '☀';
+      }
+    }
+
+    // --- Active Sidebar Section Highlighting ---
+    const sections = document.querySelectorAll('.content-card');
+    const navLinks = document.querySelectorAll('.toc-link');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px', // Trigger when section occupies the middle part of viewport
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${id}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    // --- Interactive Cookie Game Widget ---
+    const cookieBtn = document.getElementById('cookie-btn');
+    const cookieCountSpan = document.getElementById('cookie-count');
+    const storageSizeSpan = document.getElementById('storage-size');
+    const icloudStatusSpan = document.getElementById('icloud-status');
+    const syncToggleBtn = document.getElementById('sync-toggle');
+    const resetBtn = document.getElementById('reset-btn');
+    const wipeOverlay = document.getElementById('wipe-overlay');
+    const logoSpinner = document.getElementById('logo-spinner');
+
+    // Load initial cookies count from localStorage
+    let cookiesCount = parseInt(localStorage.getItem('cookie-king-cookies-sim')) || 0;
+    let icloudSync = localStorage.getItem('cookie-king-icloud-sim') !== 'disabled';
+    
+    updateSimulatorUI();
+
+    cookieBtn.addEventListener('click', (e) => {
+      cookiesCount++;
+      localStorage.setItem('cookie-king-cookies-sim', cookiesCount);
+      updateSimulatorUI();
+      
+      // Fun effect: click pop rotation
+      const rotateDeg = (Math.random() - 0.5) * 20;
+      cookieBtn.style.transform = `scale(0.92) rotate(${rotateDeg}deg)`;
+      setTimeout(() => {
+        cookieBtn.style.transform = '';
+      }, 100);
+    });
+
+    syncToggleBtn.addEventListener('click', () => {
+      icloudSync = !icloudSync;
+      localStorage.setItem('cookie-king-icloud-sim', icloudSync ? 'enabled' : 'disabled');
+      updateSimulatorUI();
+    });
+
+    resetBtn.addEventListener('click', () => {
+      if (confirm('Are you sure you want to perform a FACTORY RESET? This will erase all simulator progress.')) {
+        // Trigger visual wipe overlay
+        wipeOverlay.classList.add('active');
+        
+        setTimeout(() => {
+          cookiesCount = 0;
+          localStorage.removeItem('cookie-king-cookies-sim');
+          localStorage.removeItem('cookie-king-icloud-sim');
+          icloudSync = true;
+          updateSimulatorUI();
+        }, 1200);
+
+        setTimeout(() => {
+          wipeOverlay.classList.remove('active');
+        }, 2000);
+      }
+    });
+
+    function updateSimulatorUI() {
+      cookieCountSpan.textContent = cookiesCount.toLocaleString();
+      
+      // Calculate fake storage size based on cookie progress
+      const baseStateString = JSON.stringify({
+        cookies: cookiesCount,
+        icloud: icloudSync,
+        bakeryName: "Cookie Kingdom",
+        cursors: Math.floor(cookiesCount / 15),
+        grandmas: Math.floor(cookiesCount / 100),
+        factories: Math.floor(cookiesCount / 1100)
+      });
+      const byteSize = new Blob([baseStateString]).size;
+      storageSizeSpan.textContent = `${byteSize} bytes`;
+
+      if (icloudSync) {
+        icloudStatusSpan.textContent = 'Enabled (Active)';
+        icloudStatusSpan.style.color = '#2ed573';
+        syncToggleBtn.textContent = 'Disable iCloud Sync';
+      } else {
+        icloudStatusSpan.textContent = 'Disabled (Local Only)';
+        icloudStatusSpan.style.color = 'var(--text-muted)';
+        syncToggleBtn.textContent = 'Enable iCloud Sync';
+      }
+    }
+  </script>
+</body>
+</html>
