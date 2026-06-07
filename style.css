@@ -894,6 +894,7 @@ aside.sidebar {
 /* Tables */
 .table-container {
   overflow-x: auto;
+  max-width: 100%;
   border-radius: 12px;
   border: 1px solid var(--table-border);
   margin: 1.5rem 0;
@@ -1224,51 +1225,69 @@ tr:hover td {
   
   .privacy-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    /* Prevent any overflowing child from expanding the grid column */
+    overflow: hidden;
+  }
+
+  .privacy-content-area,
+  aside.sidebar {
+    /* min-width: 0 is required so grid children respect the 1fr boundary */
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   aside.sidebar {
-    position: sticky;
-    top: 4rem;
-    z-index: 900;
-    width: calc(100% + 3rem);
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-    background: var(--bg-primary);
+    position: static;
+    width: 100%;
+    max-height: none;
+    overflow-y: visible;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+    background: var(--card-bg);
+    top: auto;
+    z-index: auto;
   }
   
   .sidebar h3 {
-    display: none;
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
   }
-  
+
   .toc-list {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 0.4rem;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    overflow-x: visible;
+    white-space: normal;
+    padding-bottom: 0;
   }
-  
+
   .toc-link {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.8rem;
     border-left: none;
-    border-bottom: 2px solid transparent;
-    scroll-snap-align: start;
+    border: 1px solid var(--card-border);
+    border-radius: 50px;
+    background: rgba(0,0,0,0.1);
+    white-space: nowrap;
   }
-  
+
+  .toc-link:hover {
+    padding-left: 0.75rem;
+  }
+
   .toc-link.active {
     border-left: none;
-    border-bottom-color: var(--accent-gold);
+    border-color: var(--accent-gold);
     background: var(--sidebar-active);
+    color: var(--accent-gold);
   }
 }
 
@@ -1395,11 +1414,7 @@ tr:hover td {
   }
   
   aside.sidebar {
-    top: 6.5rem;
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
-    margin-right: -1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
   }
 }
 
